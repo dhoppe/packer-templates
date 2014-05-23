@@ -1,0 +1,4 @@
+*.box
+*.iso
+output-virtualbox
+output-vmware
