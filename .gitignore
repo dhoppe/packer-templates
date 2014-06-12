@@ -1,4 +1,4 @@
 *.box
-*.iso
-output-virtualbox
-output-vmware
+packer_cache
+output-virtualbox-iso
+output-vmware-iso
