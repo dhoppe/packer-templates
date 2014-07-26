@@ -1,8 +1,8 @@
 {
   "variables": {
-    "iso_url": "http://cdimage.debian.org/mirror/cdimage/archive/6.0.9/amd64/iso-cd/debian-6.0.9-amd64-netinst.iso",
-    "iso_checksum": "9b08117cc235f3084948ab75a0f48861",
-    "vm_name": "debian-6.0.9-amd64"
+    "iso_url": "http://cdimage.debian.org/mirror/cdimage/release/7.6.0/amd64/iso-cd/debian-7.6.0-amd64-netinst.iso",
+    "iso_checksum": "8a3c2ad7fd7a9c4c7e9bcb5cae38c135",
+    "vm_name": "debian-7.6.0-amd64"
   },
   "builders": [
     {
@@ -17,6 +17,7 @@
         "fb=false <wait>",
         "install <wait>",
         "kbd-chooser/method=de-latin1-nodeadkeys <wait>",
+        "keyboard-configuration/xkb-keymap=de <wait>",
         "locale=en_US.UTF-8 <wait>",
         "netcfg/get_domain=vagrantup.com <wait>",
         "netcfg/get_hostname={{ .Name }} <wait>",
@@ -50,6 +51,7 @@
         "fb=false <wait>",
         "install <wait>",
         "kbd-chooser/method=de-latin1-nodeadkeys <wait>",
+        "keyboard-configuration/xkb-keymap=de <wait>",
         "locale=en_US.UTF-8 <wait>",
         "netcfg/get_domain=vagrantup.com <wait>",
         "netcfg/get_hostname={{ .Name }} <wait>",
@@ -57,7 +59,7 @@
         "<enter><wait>"
       ],
       "disk_size": 10240,
-      "guest_os_type": "debian6-64",
+      "guest_os_type": "debian7-64",
       "http_directory": "http",
       "iso_url": "{{ user `iso_url` }}",
       "iso_checksum": "{{ user `iso_checksum` }}",
