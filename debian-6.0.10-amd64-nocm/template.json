@@ -34,7 +34,7 @@
       "ssh_password": "vagrant",
       "vboxmanage": [
         ["modifyvm", "{{ .Name }}", "--cpus", "2"],
-        ["modifyvm", "{{ .Name }}", "--memory", "1024"]
+        ["modifyvm", "{{ .Name }}", "--memory", "512"]
       ],
       "vm_name": "{{ user `vm_name` }}"
     },
@@ -69,7 +69,7 @@
       "vm_name": "{{ user `vm_name` }}",
       "vmx_data": {
         "cpuid.coresPerSocket": "1",
-        "memsize": "1024",
+        "memsize": "512",
         "numvcpus": "2"
       }
     }
