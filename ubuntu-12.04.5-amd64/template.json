@@ -1,8 +1,8 @@
 {
   "variables": {
-    "iso_url": "http://releases.ubuntu.com/precise/ubuntu-12.04.4-server-amd64.iso",
-    "iso_checksum": "e83adb9af4ec0a039e6a5c6e145a34de",
-    "vm_name": "ubuntu-12.04-amd64"
+    "iso_url": "http://releases.ubuntu.com/precise/ubuntu-12.04.5-server-amd64.iso",
+    "iso_checksum": "769474248a3897f4865817446f9a4a53",
+    "vm_name": "ubuntu-12.04.5-amd64"
   },
   "builders": [
     {
@@ -97,6 +97,7 @@
       "scripts": [
         "scripts/motd.sh",
         "scripts/networking.sh",
+        "scripts/puppet.sh",
         "scripts/sshd.sh",
         "scripts/sudoers.sh",
         "scripts/update.sh",
@@ -124,7 +125,7 @@
   "post-processors": [
     {
       "type": "vagrant",
-      "output": "{{ user `vm_name` }}-nocm_{{ .Provider }}.box"
+      "output": "{{ user `vm_name` }}_{{ .Provider }}.box"
     }
   ]
 }
