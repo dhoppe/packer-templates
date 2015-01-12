@@ -1,7 +1,7 @@
 {
   "variables": {
     "iso_url": "http://cdimage.debian.org/mirror/cdimage/daily-builds/daily/current/amd64/iso-cd/debian-testing-amd64-netinst.iso",
-    "iso_checksum": "00a945251f72ec168e04bdd7ab00ce2e",
+    "iso_checksum": "47b9b20b8f6836f4d629f23edc83087b",
     "vm_name": "debian-testing-amd64"
   },
   "builders": [
