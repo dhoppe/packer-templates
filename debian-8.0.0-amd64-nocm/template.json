@@ -19,7 +19,7 @@
         "kbd-chooser/method=de-latin1-nodeadkeys <wait>",
         "keyboard-configuration/xkb-keymap=de <wait>",
         "locale=en_US.UTF-8 <wait>",
-        "netcfg/get_domain=vagrantup.com <wait>",
+        "netcfg/get_domain=vagrant.dev <wait>",
         "netcfg/get_hostname={{ .Name }} <wait>",
         "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg <wait>",
         "<enter><wait>"
@@ -53,7 +53,7 @@
         "kbd-chooser/method=de-latin1-nodeadkeys <wait>",
         "keyboard-configuration/xkb-keymap=de <wait>",
         "locale=en_US.UTF-8 <wait>",
-        "netcfg/get_domain=vagrantup.com <wait>",
+        "netcfg/get_domain=vagrant.dev <wait>",
         "netcfg/get_hostname={{ .Name }} <wait>",
         "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed.cfg <wait>",
         "<enter><wait>"
