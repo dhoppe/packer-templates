@@ -40,6 +40,7 @@
       "shutdown_command": "echo 'vagrant' | sudo -S shutdown -h -P now",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
+      "ssh_wait_timeout": "10000s",
       "vboxmanage": [
         ["modifyvm", "{{ .Name }}", "--cpus", "2"],
         ["modifyvm", "{{ .Name }}", "--memory", "512"]
@@ -81,6 +82,7 @@
       "shutdown_command": "echo 'vagrant' | sudo -S shutdown -h -P now",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
+      "ssh_wait_timeout": "10000s",
       "tools_upload_flavor": "linux",
       "vm_name": "{{ user `vm_name` }}",
       "vmx_data": {
