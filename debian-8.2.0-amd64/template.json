@@ -1,8 +1,8 @@
 {
   "variables": {
-    "iso_url": "http://cdimage.debian.org/mirror/cdimage/release/8.1.0/amd64/iso-cd/debian-8.1.0-amd64-netinst.iso",
-    "iso_checksum": "1a311f9afb68d6365211b13b4342c40b",
-    "vm_name": "debian-8.1.0-amd64"
+    "iso_url": "http://cdimage.debian.org/mirror/cdimage/release/8.2.0/amd64/iso-cd/debian-8.2.0-amd64-netinst.iso",
+    "iso_checksum": "762eb3dfc22f85faf659001ebf270b4f",
+    "vm_name": "debian-8.2.0-amd64"
   },
   "builders": [
     {
@@ -85,6 +85,7 @@
       "scripts": [
         "scripts/motd.sh",
         "scripts/networking.sh",
+        "scripts/puppet.sh",
         "scripts/sshd.sh",
         "scripts/sudoers.sh",
         "scripts/vagrant.sh",
@@ -111,7 +112,7 @@
   "post-processors": [
     {
       "type": "vagrant",
-      "output": "{{ user `vm_name` }}-nocm_{{ .Provider }}.box"
+      "output": "{{ user `vm_name` }}_{{ .Provider }}.box"
     }
   ]
 }
