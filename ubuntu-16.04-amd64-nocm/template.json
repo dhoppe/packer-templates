@@ -113,11 +113,11 @@
       "type": "shell",
       "execute_command": "echo 'vagrant' | sudo -S bash {{ .Path }}",
       "scripts": [
+        "scripts/update.sh",
         "scripts/motd.sh",
         "scripts/networking.sh",
         "scripts/sshd.sh",
         "scripts/sudoers.sh",
-        "scripts/update.sh",
         "scripts/vagrant.sh",
         "scripts/zerodisk.sh"
       ]
