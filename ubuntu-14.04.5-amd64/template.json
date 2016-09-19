@@ -1,8 +1,8 @@
 {
   "variables": {
-    "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.4-server-amd64.iso",
-    "iso_checksum": "2ac1f3e0de626e54d05065d6f549fa3a",
-    "vm_name": "ubuntu-14.04.4-amd64"
+    "iso_url": "http://releases.ubuntu.com/trusty/ubuntu-14.04.5-server-amd64.iso",
+    "iso_checksum": "dd54dc8cfc2a655053d19813c2f9aa9f",
+    "vm_name": "ubuntu-14.04.5-amd64"
   },
   "builders": [
     {
@@ -100,6 +100,7 @@
         "scripts/update.sh",
         "scripts/motd.sh",
         "scripts/networking.sh",
+        "scripts/puppet.sh",
         "scripts/sshd.sh",
         "scripts/sudoers.sh",
         "scripts/vagrant.sh",
@@ -126,7 +127,7 @@
   "post-processors": [
     {
       "type": "vagrant",
-      "output": "{{ user `vm_name` }}-nocm_{{ .Provider }}.box"
+      "output": "{{ user `vm_name` }}_{{ .Provider }}.box"
     }
   ]
 }
