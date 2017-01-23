@@ -1,8 +1,8 @@
 {
   "variables": {
-    "iso_url": "http://cdimage.debian.org/mirror/cdimage/release/8.6.0/amd64/iso-cd/debian-8.6.0-amd64-netinst.iso",
-    "iso_checksum": "e9f61bf327db6d8f7cee05a99f2353cc",
-    "vm_name": "debian-8.6.0-amd64"
+    "iso_url": "http://cdimage.debian.org/mirror/cdimage/release/8.7.0/amd64/iso-cd/debian-8.7.0-amd64-netinst.iso",
+    "iso_checksum": "5835cd627f34ccab1c483b050b0b728b",
+    "vm_name": "debian-8.7.0-amd64"
   },
   "builders": [
     {
